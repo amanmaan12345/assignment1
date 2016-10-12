@@ -18,11 +18,15 @@ router.get('/projectsPage', function(req, res, next) {
     heading: 'Some project and Acheivements' });
 });
 
-router.get('/contacttMe', function(req, res, next) {
+router.get('/contactMe', function(req, res, next) {
   res.render('contactMe', { title: 'Projects',
     heading: 'Contact Information' });
 });
 
+router.get('/servicesPage', function(req, res, next) {
+  res.render('servicesPage', { title: 'Services',
+    heading: 'Services offered ' });
+});
 
 
 module.exports = router;
